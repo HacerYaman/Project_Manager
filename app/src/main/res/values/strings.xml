@@ -4,7 +4,7 @@
     <string name="good_morning">Good Morning!</string>
     <string name="search">Search</string>
     <string name="welcome">Welcome!</string>
-    <string name="let_s_schedule_your_projects">Let\'s Schedule \n your projects.</string>
+    <string name="let_s_schedule_your_projects">Let\'s Schedule \nyour projects.</string>
     <string name="ongoing_project">Ongoing Project</string>
     <string name="view_all">View All</string>
 </resources>
