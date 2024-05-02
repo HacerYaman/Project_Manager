@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -47,14 +50,11 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //lifecycle
-    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-livedata:2.7.0")
-    implementation ("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
+    implementation(libs.androidx.lifecycle.extensions)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata)
+    implementation (libs.androidx.coordinatorlayout)
     //view model
-
-    //implementation 'com.github.bumptech.glide:glide:4.16.0'
-
-    //implementation ('com.github.bumptech.glide:glide:4.12.0')
+    implementation (libs.glide)
 }
